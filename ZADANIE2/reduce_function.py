@@ -3,9 +3,8 @@ from functools import reduce
 
 
 def product(fracs):
-# twoj kod tutaj
-    pass 
-
+    fraction = reduce(lambda x, y: x * y, fracs)
+    return fraction.numerator, fraction.denominator
 
 if __name__ == "__main__":
     fracs = []
